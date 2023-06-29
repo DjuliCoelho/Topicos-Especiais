@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front do Claudio</title>
+</head>
+<body>
+  <style>
+    body{
+    background-color: pink;
+}
+h2{
+    position:fixed;
+    top: 50px;
+    left: -75px;
+    transform: translate(100%, -400%);
+}
+
+form{
+    text-align: center;
+}
+div{
+    
+        background-image: url("https://media.tenor.com/PTDWtC3o_CIAAAAC/barbie-ken.gif");
+        border: 2px solid blueviolet;
+        border-radius: 10px;
+        width:350px;
+        height: 290px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+      
+    
+        /*transition-property: background-color, width, height;
+        transition-duration: 2s, 2s, 2s;
+        transition-delay: 1s, 2s, 0s;
+        transition-timing-function:ease-in, linear,linear;*/
+    
+    }
+    
+    
+    div:hover{
+        background-color:greenyellow;
+        border: 2px solid green;
+        border-radius: 10px;
+        width: 400px; 
+        height: 290px;
+    
+        transition-property: background-color,height,width;
+        transition-duration: 2s, 2s, 2s;
+        transition-delay: 1s,2s,2s;
+        transition-timing-function:linear,linear,linear;
+        
+       
+        
+    }
+    
+    div:active{
+        background-color:burlywood;
+        border: 2px solid brown;
+        border-radius: 10px;
+        width: 400px; 
+        height: 200px;
+        
+        
+    }
+   
+  </style>
+    <div>
+  <h2>Formulário</h2>
+  
+  <form action="/reg" method="post"> 
+    <p> CPF: </p>
+    <input type="text" name="cpf">
+    <p> Fidelidade: </p>
+    <input type="text" name="fidelidade">
+    <p> Nome: </p>
+    <input type="text" name="nome">
+    <p> Telefone: </p>
+    <input type="text" name="telefone">
+
+    <input type="submit" name="enviar">
+  
+  
+  </div>
+  
+
+
+</body>
+</html>
